@@ -1,12 +1,14 @@
 {% extends 'base.html.twig' %}
 
+
+
 {% block body %}
-<body style="
+{#<body style="
     background-image: linear-gradient(rgba(37, 179, 44, 0.65),rgba(31, 125, 148, 0.65)),url(../img/bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">#}
     <h1>Connexion !</h1>
 
     <form action="{{ path('security_login') }}" method="post">

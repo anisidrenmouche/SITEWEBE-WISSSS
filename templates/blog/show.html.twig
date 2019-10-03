@@ -1,10 +1,8 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<body style="
-    background-image: linear-gradient(rgba(37, 179, 44, 0.65),rgba(31, 125, 148, 0.65)),url(../img/bg.jpg);
+<div style="
+    background-image: linear-gradient(rgba(37, 179, 44, 0.65),rgba(31, 125, 148, 0.65)),url({{ url('home') }}img/bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;">
@@ -48,7 +46,7 @@
             <a href="{{ path('security_login') }}" class="btn btn-primary">Connexion</a>
         {% endif %}
     </section>
-
+</div>
 {% endblock %}
 
 {% block javascripts %}
