@@ -6,6 +6,7 @@
     background-attachment: fixed;
     background-position: center;
     background-size: cover;">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <h1>Connexion !</h1>
 
     <form action="{{ path('security_login') }}" method="post">
@@ -20,4 +21,9 @@
         </div>
     </form>
 
+{% endblock %}
+
+{% block javascripts %}
+
+        
 {% endblock %}
