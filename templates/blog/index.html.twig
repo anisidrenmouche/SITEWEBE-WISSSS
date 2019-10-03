@@ -17,8 +17,11 @@
 
     
         <article>
+        <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
             <h2>{{ article.title }}</h2>
-            <div class="metadata">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la catégorie {{ article.category.title }}</div>
+            <span class="section-heading-upper">Ecrit le {{ article.createdAt | date('d/m/Y') }} à {{ article.createdAt | date('H:i') }} dans la catégorie {{ article.category.title }}</div>
             <div class="content">
                 <img src="{{ article.image }}" alt "">
                 {{ article.content | raw }}
